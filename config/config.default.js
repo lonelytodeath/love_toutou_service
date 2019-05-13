@@ -16,13 +16,13 @@ module.exports = appInfo => {
     },
   };
 
-  exports.cors = {
+  config.cors = {
     origin: '*',
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
     // credentials: 'true',
   };
 
-  exports.security = {
+  config.security = {
     csrf: {
       enable: false,
     },
