@@ -1,6 +1,6 @@
 'use strict';
 module.exports = appInfo => {
-  const config = exports = {};
+  const config = {};
   config.keys = appInfo.name + '_1532962019674_2847';
   config.cluster = {
     listen: {

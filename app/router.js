@@ -4,6 +4,7 @@
  * @param {Egg.Application} app - egg application
  */
 module.exports = app => {
-  const { router, controller } = app;
+  const { controller } = app;
+  const router = app.router.namespace('/v1/news');
   router.get('/', controller.home.index);
 };
