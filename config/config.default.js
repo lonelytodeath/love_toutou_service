@@ -26,6 +26,7 @@ module.exports = appInfo => {
     csrf: {
       enable: true,
     },
+    domainWhiteList: [ 'http://localhost:10000' ],
   };
 
   config.session = {
