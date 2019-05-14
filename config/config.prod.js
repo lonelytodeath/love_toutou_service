@@ -19,7 +19,6 @@ module.exports = appInfo => {
       enable: true,
       ignoreJSON: true,
     },
-    domainWhiteList: [ 'http://localhost:10000' ],
   };
 
   config.session = {
