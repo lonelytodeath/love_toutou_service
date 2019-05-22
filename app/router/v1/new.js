@@ -7,4 +7,5 @@ module.exports = app => {
   const { controller, middleware } = app;
   const router = app.router.namespace('/v1/news');
   router.get('/', middleware.validate(newsVaildSchema), controller.v1.new.getList);
+  router.get('/keyword', middleware.validate(newsVaildSchema), controller.v1.new.getListByKeyword);
 };

@@ -12,6 +12,13 @@ class NewController extends Controller {
     const result = await ctx.service.new.getList(query.tag, query.page, query.pageSize);
     ctx.body = ctx.service.common.getReturnObject(result);
   }
+
+  async getListByKeyword() {
+    const ctx = this.ctx;
+    const { query } = ctx.validatedValue;
+    const result = await ctx.service.new.getListByKeyword(query.keyword);
+    ctx.body = ctx.service.common.getReturnObject(result);
+  }
 }
 
 module.exports = NewController;

@@ -8,5 +8,6 @@ module.exports = {
     tag: joi.number().default(0),
     page: joi.number().default(1),
     pageSize: joi.number().default(10),
+    keyword: joi.string().allow('').default(''),
   },
 };
