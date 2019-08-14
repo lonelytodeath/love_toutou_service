@@ -10,7 +10,7 @@ class ImportNewsJob extends Subscription {
     return {
       interval: '10m',
       type: 'worker',
-      disable: false,
+      disable: true,
       cronOptions: {
         tz: 'Asia/Shanghai',
       },
